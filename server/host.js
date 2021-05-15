@@ -1,5 +1,5 @@
 const express = require('express')
-const { MongoClient } = require('mongodb')
+const { MongoClient } = require('mongodb') // syntax only available for Node v6 or higher
 
 const app = express()
 app.use(express.json())
