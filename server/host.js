@@ -2,7 +2,7 @@ const express = require('express')
 const { MongoClient } = require('mongodb') // syntax only available for Node v6 or higher
 
 const app = express()
-app.use(express.json())
+app.use(express.json()) // syntax only available for Express 4.16 or higher
 
 const uri = 'mongodb://localhost:27017'
 const client = new MongoClient(uri, {
