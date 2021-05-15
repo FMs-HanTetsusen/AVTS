@@ -25,7 +25,7 @@ async function insert(body) {
     }
 }
 
-app.post('/AVTS', function (req, res) {
+app.post('/AVTS/server', function (req, res) {
     console.log(req.body)
     res.send('OK')
     insert(req.body)
